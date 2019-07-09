@@ -12,6 +12,12 @@ import AddictionsEdit from "./views/addictions/Edit.vue";
 import AddictionsShow from "./views/addictions/Show.vue";
 
 import FourthStepNew from "./views/fourth_steps/New.vue";
+import FourthStepShow from "./views/fourth_steps/Show.vue";
+import FourthStepEdit from "./views/fourth_steps/Edit.vue";
+import FourthStepIndex from "./views/fourth_steps/Index.vue";
+
+
+
 
 Vue.use(Router)
 
@@ -60,9 +66,24 @@ export default new Router({
       component: AddictionsShow
     },
     {
+      path: '/fourth_steps',
+      name: 'fourth-steps-index',
+      component: FourthStepIndex
+    },
+    {
       path: '/fourth_steps/new',
       name: 'fourth-steps-new',
       component: FourthStepNew
+    },
+    {
+      path: '/fourth_steps/:id',
+      name: 'fourth-steps-show',
+      component: FourthStepShow
+    },
+    {
+      path: '/fourth_steps/:id/edit',
+      name: 'fourth-steps-edit',
+      component: FourthStepEdit
     },
     {
       path: '/about',

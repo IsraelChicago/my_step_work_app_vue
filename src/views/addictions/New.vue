@@ -9,57 +9,83 @@
 
     <form>
         <div>
-          <label>Title</label>
-          <input type="text" placeholder="Title:" v-model="newAddictionTitle"> 
+          <label>Title</label><br>
+          <input class="text-input" type="text" placeholder="Title:" v-model="newAddictionTitle"> 
         </div>
+        <br>
 
         <div>
-          <label>The Problem</label><br>
-          <input type="textarea"  placeholder="The problem:" v-model="newAddictionProblem"> 
+          <label>Addiction Family</label><br>
+          <input class="text-input" type="text" placeholder="Type of addiction: Food, financials, etc.:" v-model="newAddictionAddictionFamily"> 
         </div>
+        <br>
+        
 
         <div>
-          <label>The Solution</label>
-          <input type="textarea" placeholder="The Solution:" v-model="newAddictionSolution"> 
+          <label>The Problem</label><br><br>
+          <textarea  placeholder="The problem:" v-model="newAddictionProblem"> </textarea>
         </div>
+        <br>
+        
 
         <div>
-          <label>The promises</label>
-          <input type="textarea" placeholder="The Promises:" v-model="newAddictionPromises"> 
+          <label>The Solution</label><br>
+          <textarea placeholder="The Solution:" v-model="newAddictionSolution"> </textarea> 
         </div>
+        <br>
+        
 
         <div>
-          <label>The Twelve Steps</label>
-          <input type="textarea" placeholder="The Twelve Steps:" v-model="newAddictionTwelveSteps"> 
+          <label>The promises</label><br>
+          <textarea  placeholder="The Promises:" v-model="newAddictionPromises"> </textarea> 
         </div>
+        <br>
+        
+
+        <div>
+          <label>The Twelve Steps</label><br>
+          <textarea placeholder="The Twelve Steps:" v-model="newAddictionTwelveSteps"> </textarea> 
+        </div>
+        <br>
+        
         
         <div>
-          <label>Recovery Website</label>
-          <input type="text" placeholder="Official Site URL:" v-model="newAddictionRecoveryUrl"> 
+          <label>Recovery Website</label><br>
+          <input class="text-input" type="text" placeholder="Official Site URL:" v-model="newAddictionRecoveryUrl"> 
         </div>
+        <br>
+        
         
         <div>
-          <label>Recovery Logo</label>
-          <input type="text" placeholder="Logo URL:" v-model="newAddictionLogoUrl"> 
+          <label>Recovery Logo</label><br>
+          <input class="text-input" type="text" placeholder="Logo URL:" v-model="newAddictionLogoUrl"> 
         </div>
+        <br>
+        
         <div>
-          <label>Background</label>
-          <input type="text" placeholder="Background URL:" v-model="newAddictionBackgroundUrl"> 
+          <label>Background</label><br>
+          <input class="text-input" type="text" placeholder="Background URL:" v-model="newAddictionBackgroundUrl"> 
         </div>
+        <br>
+        
 
         <div>
-          <label>Flash Background</label>
-          <input type="text" placeholder="Switching Flash Background URL:" v-model="newAddictionSwitchBackgroundUrl"> 
+          <label>Flash Background</label><br>
+          <input class="text-input" type="text" placeholder="Switching Flash Background URL:" v-model="newAddictionSwitchBackgroundUrl"> 
         </div>
+        <br>
+        
       
      <!--  <div >
-        <label>Image</label>
+        <label>Image</label><br>
         <input type="file" v-on:change="setFile($event)" ref="fileInput">
       </div> -->
 
       <div>
         <button v-on:click="createAddiction()">Create Addiction Profile</button>
       </div>
+        <br>
+        
     </form>
     
   </div>
@@ -72,6 +98,7 @@ export default {
   data: function() {
     return {
       newAddictionTitle: "",
+      newAddictionAddictionFamily: "",
       newAddictionProblem: "",
       newAddictionSolution: "",
       newAddictionPromises: "",
@@ -89,6 +116,7 @@ export default {
     createAddiction: function() {
       var params = {
         title: this.newAddictionTitle,
+        addiction_family: this.newAddictionAddictionFamily,
         problem: this.newAddictionProblem,
         solution: this.newAddictionSolution,
         promises: this.newAddictionPromises,
@@ -101,6 +129,7 @@ export default {
       axios.post("/api/addictions", params).then(response => {
         this.addictions.push(response.data);
         this.newAddictionTitle = "";
+        this.newAddictionAddictionFamily = "";
         this.newAddictionProblem = "";
         this.newAddictionSolution = "";
         this.newAddictionPromises = "";

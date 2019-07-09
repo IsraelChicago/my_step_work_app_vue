@@ -21,7 +21,7 @@
 
       <div>
         <label>Who</label><br>
-        <input class="text-input"type="text" placeholder="this is for resentment inventories or harms. Who:" v-model=" newFourthStepWho"> 
+        <input class="text-input" type="text" placeholder="this is for resentment inventories or harms. Who:" v-model=" newFourthStepWho"> 
       </div>
       <br>
 

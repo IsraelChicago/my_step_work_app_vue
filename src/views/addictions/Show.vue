@@ -2,6 +2,7 @@
   <div class="addictions-show">
     <div>
       <h2> {{ addiction.title }}</h2>
+      <h2> {{ addiction.addiction_family }}</h2>
       <img v-bind:src="addiction.logo_url" alt="">
       <img v-bind:src="addiction.background_url" alt="">
       <img v-bind:src="addiction.switch_background_url" alt="">

@@ -4,6 +4,7 @@
                                         
       <div v-for="addiction in addictions">
         <h1> Title: {{ addiction.title }} </h1>
+        <h3> Addiction Family: {{ addiction.addiction_family }} </h3>
         <h4> Problem: {{ addiction.problem }} </h4>
         <h4> Solution: {{ addiction.solution }} </h4>
         <h6> Promises: {{ addiction.promises }} </h6>
