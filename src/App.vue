@@ -2,6 +2,8 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
+      <router-link to="/addictions/index">Addiction index</router-link> |
+      
       <router-link to="/about">About</router-link>
     </div>
     <router-view/>
@@ -27,5 +29,30 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+textarea {
+  width: 300px;
+  height: 150px;
+}
+
+.text-input {
+  width: 300px;
+  height: 30px;
+}
+
+
+.button-input {
+  width: 280px;
+  height: 100px;
+  background-color: grey; 
+  border: 2px solid black; 
+  border-radius: 10px;
+  color: white;
+  padding: 4px 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
 }
 </style>

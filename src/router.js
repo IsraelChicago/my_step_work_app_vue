@@ -2,6 +2,17 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
 
+import Signup from "./views/users/Signup.vue";
+import Login from "./views/users/Login.vue";
+import Logout from "./views/users/Logout.vue";
+
+import AddictionsIndex from "./views/addictions/Index.vue";
+import AddictionsNew from "./views/addictions/New.vue";
+import AddictionsEdit from "./views/addictions/Edit.vue";
+import AddictionsShow from "./views/addictions/Show.vue";
+
+import FourthStepNew from "./views/fourth_steps/New.vue";
+
 Vue.use(Router)
 
 export default new Router({
@@ -12,6 +23,46 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home
+    },
+    {
+      path: '/signup',
+      name: 'signup',
+      component: Signup
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: Login
+    },
+    {
+      path: '/logout',
+      name: 'logout',
+      component: Logout
+    },
+    {
+      path: '/addictions',
+      name: 'addictions-index',
+      component: AddictionsIndex
+    },
+    {
+      path: '/addictions/new',
+      name: 'addictions-new',
+      component: AddictionsNew
+    },
+    {
+      path: '/addictions/:id/edit',
+      name: 'addictions-edit',
+      component: AddictionsEdit
+    },
+    {
+      path: '/addictions/:id',
+      name: 'addictions-show',
+      component: AddictionsShow
+    },
+    {
+      path: '/fourth_steps/new',
+      name: 'fourth-steps-new',
+      component: FourthStepNew
     },
     {
       path: '/about',
