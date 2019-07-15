@@ -1,67 +1,43 @@
 
 <template>
-  <div class="addictions-edit">
+  <div class="step-works-edit">
 
-    <h1>Edit Addiction information</h1>
+    <h1>Edit my step work</h1>
 
     <ul>
       <li v-for="error in errors">{{ error }}</li>
     </ul>
 
-    <form v-on:sumbit.prevent="submit()">
-      <div>
-        <label>Title</label>
-        <input type="text" placeholder="Title:" v-model="addiction.title"> 
-      </div>
-
-      <div>
-        <label>The Problem</label>
-        <input type="textarea" placeholder="The problem:" v-model="addiction.problem"> 
-      </div>
-
-      <div>
-        <label>The Solution</label>
-        <input type="textarea" placeholder="The Solution:" v-model="addiction.solution"> 
-      </div>
-
-      <div>
-        <label>The promises</label>
-        <input type="textarea" placeholder="The Promises:" v-model="addiction.promises"> 
-      </div>
-
-      <div>
-        <label>The Twelve Steps</label>
-        <input type="textarea" placeholder="The Twelve Steps:" v-model="addiction.twelve_steps"> 
-      </div>
+    <form v-on:submit.prevent="submit()">
       
       <div>
-        <label>Recovery Logo</label>
-        <input type="text" placeholder="Logo URL:" v-model="addiction.logo_url"> 
+        <label>Step #</label><br>
+        <input type="number" v-model="stepWork.step"></textarea>
+      </div>
+
+      <div>
+        <label>My Step Work</label><br>
+        <textarea id="myStepWork" placeholder="Any journaling about the step work:" v-model="stepWork.my_work"></textarea>
+      </div>
+
+
+
+      <div>
+        <label>My journaling about this step</label><br>
+        <textarea id="myJournal" placeholder="Any journaling about the step work:" v-model="stepWork.journal"></textarea>
+      </div>
+
+      <div>
+        <button class="button-input" type="submit">Update Step Work
+        </button>
       </div>
       
-      <div>
-        <label>Background</label>
-        <input type="text" placeholder="Background URL:" v-model="addiction.background_url"> 
-      </div>
-
-      <div>
-        <label>Flash Background</label>
-        <input type="text" placeholder="Switching Flash Background URL:" v-model="addiction.switch_background_url"> 
-      </div>
-
-      <div>
-        <label>Recovery Website</label>
-        <input type="text" placeholder="Official Site URL:" v-model="addiction.recovery_url"> 
-      </div>
-    
-      <div>
-        <button type="submit">Create Addiction Profile</button>
-      </div>
     </form>
 
+
     <div>
-      <button v-on:click="destroyAddiction()">
-        DELETE THIS RECOVERY GROUP
+      <button v-on:click="destroyStepWork()">
+        DELETE THIS STEP WORK
       </button>
     </div>
 
@@ -75,43 +51,37 @@ export default {
   data: function() {
     return {
       errors: [],
-      addiction: {}
+      stepWork: {}
     };
   },
   created: function() {
-    axios.get("/api/addictions/" + this.$route.params.id).then(response => {
-      this.addiction = response.data;
-      console.log(this.addiction);
+    axios.get("/api/step_works/" + this.$route.params.id).then(response => {
+      this.stepWork = response.data;
+      console.log(this.stepWork);
     });
   },
   methods: {
-    submit: function() {
-      
+    submit: function() {     
       var params = {
-        title: this.addiction.title,
-        problem: this.addiction.problem,
-        solution: this.addiction.solution,
-        promises: this.addiction.promises,
-        twelve_steps: this.addiction.twelve_steps,
-        recovery_url: this.addiction.recovery_url,
-        logo_url: this.addiction.logo_url,
-        background_url: this.addiction.background_url,
-        switch_background_url: this.addiction.switch_background_url,
+                           
+        step: this.stepWork.step,                   
+        my_work: this.stepWork.my_work,  
+        journal: this.stepWork.journal    
       };
       
-      axios.patch("/api/addictions/" + this.addiction.id, params).then(response => {
+      axios.patch("/api/step_works/" + this.stepWork.id, params).then(response => {
         console.log("Success!", response.data);
-        this.$router.push("/addictions/" + this.addiction.id);
+        this.$router.push("/step_works/" + this.stepWork.id);
       }).catch(error => {
         this.errors = error.response.data.errors;
       });
     },
-    destroyAddiction: function() {
+    destroyStepWork: function() {
       
-      if(confirm("Do you really want to delete " + this.addiction.title + "?"))
-      axios.delete("/api/addictions/" + this.addiction.id).then(response => {
+      if(confirm("Do you really want to delete the intire work of step " + this.stepWork.step + "?"))
+      axios.delete("/api/step_works/" + this.stepWork.id).then(response => {
         console.log("Success!", response.data);
-        this.$router.push("/addictions/index");
+        this.$router.push("/step_works/index");
       });
     }
   }

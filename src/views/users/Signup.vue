@@ -2,7 +2,7 @@
   <div class="signup">
     <div class="container">
       <form v-on:submit.prevent="submit()">
-        <h1>Signup</h1>
+        <h1>Signup</h1><br>
         <ul>
           <li class="text-danger" v-for="error in errors">{{ error }}</li>
         </ul>
@@ -10,24 +10,48 @@
           <label>Name:</label> 
           <input type="text" class="form-control" v-model="name">
         </div>
+        <br>
         <div class="form-group">
           <label>Username:</label> 
           <input type="text" class="form-control" v-model="username">
         </div>
+        <br>
         <div class="form-group">
           <label>Email:</label>
           <input type="email" class="form-control" v-model="email">
         </div>
+        <br>
         <div class="form-group">
           <label>Password:</label>
           <input type="password" class="form-control" v-model="password">
         </div>
+        <br>
         <div class="form-group">
           <label>Password confirmation:</label>
           <input type="password" class="form-control" v-model="passwordConfirmation">
         </div>
-        <input type="submit" class="btn btn-primary" value="Submit">
+        <br>
+        <br>
+        <input type="submit" class="button-input" value="Submit">
       </form>
+
+      <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <br>
+      </form>
+
+      <h3>
+        If you are already a user <br> You can Login here
+      </h3>
+
+      <router-link v-bind:to="'/signup'">
+        <button style="background-color: yellow;">Login</button>
+      </router-link>
+      
     </div>
   </div>
 </template>

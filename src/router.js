@@ -5,16 +5,22 @@ import Home from './views/Home.vue'
 import Signup from "./views/users/Signup.vue";
 import Login from "./views/users/Login.vue";
 import Logout from "./views/users/Logout.vue";
+import UserShow from "./views/users/Show.vue";
+import UserEdit from "./views/users/Edit.vue";
+
 
 import AddictionsIndex from "./views/addictions/Index.vue";
-import AddictionsNew from "./views/addictions/New.vue";
-import AddictionsEdit from "./views/addictions/Edit.vue";
 import AddictionsShow from "./views/addictions/Show.vue";
 
 import FourthStepNew from "./views/fourth_steps/New.vue";
 import FourthStepShow from "./views/fourth_steps/Show.vue";
 import FourthStepEdit from "./views/fourth_steps/Edit.vue";
 import FourthStepIndex from "./views/fourth_steps/Index.vue";
+
+import StepWorkNew from "./views/step_works/New.vue";
+import StepWorkShow from "./views/step_works/Show.vue";
+import StepWorkEdit from "./views/step_works/Edit.vue";
+import StepWorkIndex from "./views/step_works/Index.vue";
 
 
 
@@ -45,26 +51,33 @@ export default new Router({
       name: 'logout',
       component: Logout
     },
+
+    {
+      path: '/users/:id',
+      name: 'users-show',
+      component: UserShow
+    },
+    {
+      path: '/users/:id/edit',
+      name: 'user-edit',
+      component: UserEdit
+    },
+    
+
     {
       path: '/addictions',
       name: 'addictions-index',
       component: AddictionsIndex
     },
-    {
-      path: '/addictions/new',
-      name: 'addictions-new',
-      component: AddictionsNew
-    },
-    {
-      path: '/addictions/:id/edit',
-      name: 'addictions-edit',
-      component: AddictionsEdit
-    },
+  
+  
     {
       path: '/addictions/:id',
       name: 'addictions-show',
       component: AddictionsShow
     },
+
+
     {
       path: '/fourth_steps',
       name: 'fourth-steps-index',
@@ -85,6 +98,30 @@ export default new Router({
       name: 'fourth-steps-edit',
       component: FourthStepEdit
     },
+
+
+    {
+      path: '/step_works',
+      name: 'step-works-index',
+      component: StepWorkIndex
+    },
+    {
+      path: '/step_works/new',
+      name: 'step-works-new',
+      component: StepWorkNew
+    },
+    {
+      path: '/step_works/:id',
+      name: 'step-works-show',
+      component: StepWorkShow
+    },
+    {
+      path: '/step_works/:id/edit',
+      name: 'step-works-edit',
+      component: StepWorkEdit
+    },
+
+
     {
       path: '/about',
       name: 'about',

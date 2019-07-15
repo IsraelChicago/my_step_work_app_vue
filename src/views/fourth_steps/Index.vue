@@ -1,32 +1,91 @@
 <template>
-  <div class="fourth-steps-index">
-    <div>            
+  <div class="fourth-steps-index"> 
+    <div>
+
+
+
+      
       <div v-for="fourthStep in fourthSteps">
-        <p>type_of_fourth: {{ fourthStep.type_of_fourth }} </p>                   
-        <p> who: {{ fourthStep.who }} </p>                   
-        <p> what: {{ fourthStep.what }} </p>                   
-        <p> why: {{ fourthStep.why }} </p>                   
-        <p> self_esteem: {{ fourthStep.self_esteem }} </p>                   
-        <p> pocket_book: {{ fourthStep.pocket_book }} </p>                   
-        <p> ambitions: {{ fourthStep.ambitions }} </p>                   
-        <p> personal_relationships: {{ fourthStep.personal_relationships }} </p>    
-        <p> physical_security: {{ fourthStep.physical_security }} </p>                   
-        <p> emotional_security: {{ fourthStep.emotional_security }} </p>                   
-        <p> sex_relationships: {{ fourthStep.sex_relationships }} </p>                   
-        <p> fear_solved: {{ fourthStep.fear_solved }} </p>                   
-        <p> selfish: {{ fourthStep.selfish }} </p>                   
-        <p> dishonest: {{ fourthStep.dishonest }} </p>                   
-        <p> self_seeking: {{ fourthStep.self_seeking }} </p>                   
-        <p> frightened: {{ fourthStep.frightened }} </p>                   
-        <p> selfless: {{ fourthStep.selfless }} </p>                   
-        <p> rigorous_honesty: {{ fourthStep.rigorous_honesty }} </p>                   
-        <p> hp_seeking: {{ fourthStep.hp_seeking }} </p>                   
-        <p> hp_serenity: {{ fourthStep.hp_serenity }} </p>                   
-        <p> fifth_done: {{ fourthStep.fifth_done }} </p>                   
-        <p> eight_done: {{ fourthStep.eight_done }} </p>                   
-        <p> ninth_done: {{ fourthStep.ninth_done }} </p>                   
-        <p> free: {{ fourthStep.free }} </p>        
-      </div>                      
+        <div v-if="fourthStep.resentment">
+          <h1>All Resentment inventories: </h1>   
+          <br>
+          <br>
+
+          <h3> Who am I resenting in this inventory:</h3> <h1>{{ fourthStep.who }}</h1>   
+        <router-link  v-bind:to="'/fourth_steps/' + fourthStep.id"><button>
+          See this full fourth step info:</button>
+        </router-link>
+      </div>
+      </div> 
+
+      <div v-for="fourthStep in fourthSteps">
+        <div v-if="fourthStep.harm">
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <h1>All Harm inventories: </h1>
+          <br>
+          <br>       
+          <h3> Who did I harm in this inventory:</h3> <h1>{{ fourthStep.who }}</h1>   
+        <router-link  v-bind:to="'/fourth_steps/' + fourthStep.id"><button>
+          See this full fourth step info:</button>
+        </router-link>
+      </div>
+      </div> 
+
+      <div v-for="fourthStep in fourthSteps">
+        <div v-if="fourthStep.fear">
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <h1>All Fear inventories: </h1>
+          <br>
+          <br>       
+          <h3> What am I affraid of in this inventory:</h3> <h1>{{ fourthStep.what }}</h1>   
+        <router-link  v-bind:to="'/fourth_steps/' + fourthStep.id"><button>
+          See this full fourth step info:</button>
+        </router-link>
+      </div>
+      </div> 
+
+
+
+
+
+
+
+
+      <router-link v-bind:to="'/fourth_steps/new'">
+        <button class="create-button">
+          <p>
+            <strong>
+              Click me! 
+            </strong>
+            <br>
+             <small>
+              To start writing a 
+            </small>
+            <br> 
+            <strong>
+            "Fourth Step inventory"
+            </strong>
+          </p>
+        </button>
+      </router-link>
+
+
+
+
+
+
+
+
     </div>
   </div>
 </template>
@@ -37,14 +96,17 @@
 
 <script>
 import axios from "axios";
+import Vue2Filters from "vue2-filters";
 
 
 export default {
+
+   mixins: [Vue2Filters.mixin],
   
   data: function() {
     return {
       
-      fourthStep: []
+      fourthSteps: []
       
     };
   },

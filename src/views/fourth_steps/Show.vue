@@ -2,105 +2,156 @@
   <div class="fourth-steps-show">
     <div class="container">
 
-      <small>Type of Fourth step: </small><br>
-      <p> {{ fourthStep.type_of_fourth }} </p>
-      <small> Who</small><br>
-      <p> {{ fourthStep.who }} </p>
-
-      <small> What:</small><br>
-      <p> {{ fourthStep.what }} </p>
-
-      <small>Why:</small><br>
-      <p> {{ fourthStep.why }} </p>
-
-      <h5>Affects my:</h5>
-
-      
-      <p v-if="fourthStep.self_esteem"> Self Esteem </p>
-
-      <small> Pocket Book?</small><br>
-      <p> {{ fourthStep.pocket_book}} </p>
-
-      <small> Ambitions? </small><br>
-      <p> {{ fourthStep.ambitions }} </p>
-
-      <small> Personal Relationships?</small><br>
-      <p> {{ fourthStep.personal_relationships }} </p>
-
-      <small> Physical Security?</small><br>
-      <p> {{ fourthStep.physical_security }} </p>
-
-      <small> Emotional Security?</small><br>
-      <p> {{ fourthStep.emotional_security }} </p>
-
-      <small> Sex Relationships?</small><br>
-      <p> {{ fourthStep.sex_relationships }} </p>
-
-      <small> How did fear solve this issue in the past?</small><br>
-      <p> {{ fourthStep.fear_solved }} </p>
-
-      <small> Where was I selfish?</small><br>
-      <p> {{ fourthStep.selfish }} </p>
-
-      <small> Where was I dishonest?</small><br>
-      <p> {{ fourthStep.dishonest }} </p>
-
-      <small> Where was I self seeking?</small><br>
-      <p> {{ fourthStep.self_seeking }} </p>
-
-      <small> Where was I Frightened?</small><br>
-      <p> {{ fourthStep.frightened }} </p>
-
-      <small> How can I now be Selfless?</small><br>
-      <p> {{ fourthStep.selfless }} </p>
-
-      <small> How can I now be Rigorous Honest?</small><br>
-      <p> {{ fourthStep.rigorous_honesty }} </p>
-
-      <small> How can I now be "HP seeking"?</small><br>
-      <p> {{ fourthStep.hp_seeking }} </p>
-
-      <small> How can I now be setteled in the hands of my HP?</small><br>
-      <p> {{ fourthStep.hp_serenity }} </p>
-      
-      <div>
-        <p v-if="fourthStep.fifth_done"> Great! <br> A "Fifth Step" was succesfully done. <br> What am I doing next for my recovery? </p>
-        <p v-if="!fourthStep.fifth_done"> Did I complete a solid 5th step on this one? </p>
+      <div id="type-of-fourth-show">
+        <small>Type of Fourth step: </small><br>
+        <p> {{ fourthStep.type_of_fourth }} </p>
       </div>
 
 
-      <div>
-        <p v-if="fourthStep.eight_done"> Great! <br> An "Eight Step" was succesfully done. <br> What am I doing next for my recovery? </p>
-        <p v-if="!fourthStep.eight_done"> Did I complete a solid 8th step on this one? </p>
-      </div>
 
-      <div>
-        <p v-if="fourthStep.ninth_done"> Great! <br> A "Ninth Step" was succesfully done.</p> 
+
+      <div id="first-three-coulmns-show">
+        <small> Who</small><br>
+        <p> {{ fourthStep.who }} </p>
+
+        <small> What:</small><br>
+        <p> {{ fourthStep.what }} </p>
+
+        <div v-if="fourthStep.fear">
+          <small>Why:</small><br>
+          <p> {{ fourthStep.why }} </p>
+        </div>
         <br>
-        <h3> What a relief! </h3>
-        <p v-if="!fourthStep.ninth_done"> Did I complete a solid 8th step on this one? </p>
+        <br>
+
+        <h5>Affects my:</h5>
+        
+        <p v-if="fourthStep.self_esteem"> Self Esteem </p>
+        <p v-if="fourthStep.pocket_book"> Pocket Book </p>
+        <p v-if="fourthStep.ambitions"> Ambitions </p>
+        <p v-if="fourthStep.personal_relationships"> Personal Relationships </p>
+        <p v-if="fourthStep.physical_security"> Physical Security </p>
+        <p v-if="fourthStep.emotional_security"> Emotional Security </p>
+        <p v-if="fourthStep.sex_relationships"> Sex Relationships </p>
       </div>
 
-      
-
-      <small> Did I complete an 8th step on this one?</small><br>
-      <p> {{ fourthStep.eight_done }} </p>
-
-      <small> Did I complete a solid 9th step on this one?</small><br>
-      <p> {{ fourthStep.ninth_done }} </p>
-
-      <small> Was I set compleatly free of this specific inventory through this step work?</small><br>
-      <p> {{ fourthStep.free }} </p>
+      <br>
+      <br>
 
 
-      <router-link v-bind:to="'/fourth_steps/' + fourthStep.id + '/edit'">
-        <button>Edit Recovery Information</button>
-      </router-link>
+      <div id:="for-fear-only-show">
+        <small> How did fear solve this issue in the past?</small><br>
+        <p> {{ fourthStep.fear_solved }} </p>
+      </div>
 
 
-      
+
+
+      <div id="fourth-column-show">
+        <small> Where was I selfish?</small><br>
+        <p> {{ fourthStep.selfish }} </p>
+
+        <small> Where was I dishonest?</small><br>
+        <p> {{ fourthStep.dishonest }} </p>
+
+        <small> Where was I self seeking?</small><br>
+        <p> {{ fourthStep.self_seeking }} </p>
+
+        <small> Where was I Frightened?</small><br>
+        <p> {{ fourthStep.frightened }} </p>
+      </div>
+
+
+
+
+
+
+
+      <div id="fifth-column-show">
+        <small> How can I now be Selfless?</small><br>
+        <p> {{ fourthStep.selfless }} </p>
+
+        <small> How can I now be Rigorous Honest?</small><br>
+        <p> {{ fourthStep.rigorous_honesty }} </p>
+
+        <small> How can I now be "HP seeking"?</small><br>
+        <p> {{ fourthStep.hp_seeking }} </p>
+
+        <small> How can I now be setteled in the hands of my HP?</small><br>
+        <p> {{ fourthStep.hp_serenity }} </p>
+      </div>
+
+
+        <div id="fifth-done-show">
+          <p v-if="fourthStep.fifth_done"> <strong> Great! </strong> <br> A <strong> "Fifth Step"</strong>  was succesfully done. <br> What am I doing next for my recovery? </p>
+          <p v-if="!fourthStep.fifth_done"> When am I planing to complete a solid 5th step on this one? </p>
+        </div>
+
+
+        <div id="eight-done-show">
+          <p v-if="fourthStep.eight_done"> <strong> Great! </strong> <br> An <strong> "Eight Step"</strong>  was succesfully done. <br> What am I doing next for my recovery? </p>
+          <p v-if="!fourthStep.eight_done"> When am I planing to complete a solid 8th step on this one? </p>
+        </div>
+
+        <div id="ninth-done-show">
+          <p v-if="fourthStep.ninth_done"> <strong> Great! </strong> <br> A <strong> "Ninth Step"</strong>  was succesfully done. </p>
+          <h4 v-if="fourthStep.ninth_done">After a complete 9th step, I may feel great!</h4>
+          <p v-if="!fourthStep.ninth_done"> When am I planing to complete a solid 9th step on this one? </p>
+        </div>
+
+        <br>
+        
+
+        
+
+        
+        <div >
+          <div v-if="!fourthStep.free"> 
+            <h2>
+              I DO NOT WANT TO MISS OUT! 
+            </h2>
+            <p>
+              I have a promise that this work, if done right, will set me compleatly free! <br> At least free of this specific inventory item!!!
+            </p>
+          </div>
+
+          <div v-if="fourthStep.free"> 
+            <p>
+               "I WAS SET FREE!"
+            </p> 
+            <h1>
+              GREAT! 
+            </h1> 
+
+            <h3>
+              I have recieved grace from my HP.
+            </h3>
+
+            <h4>
+               "What a miraculous feeling of releif!"
+            </h4> 
+            <h3>
+              Keep on trudging the road to a happy destiny
+            </h3>
+
+          </div>
+        </div>
+        <br>
+        <br>
+
+        <router-link  v-bind:to="'/fourth_steps/' + fourthStep.id + '/edit'">
+          <button class="button-input">Edit this Fourth Step</button>
+        </router-link>
+        <br>
+        <br>
+        <router-link  v-bind:to="'/fourth_steps'">
+          <button class="button-input">Back to all fourth steps page</button>
+        </router-link>
+    
     </div>
-      
+    <br>
+        <br>
+        <br>     
   </div>
 </template>
 
