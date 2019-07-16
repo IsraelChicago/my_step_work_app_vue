@@ -85,7 +85,7 @@
             <div v-if="newFourthStepResentment ">
               <h1>Who am I Resenting?</h1><br>
               <label><strong>Who</strong></label><br>
-              <textarea class="text-input" type="text" placeholder="Which person, place, thing, situation, or organazation am I resenting?" v-model=" newFourthStepWho"></textarea>
+              <textarea class="text-input" type="text" placeholder="Which person, place, thing, situation, or organization am I resenting?" v-model=" newFourthStepWho"></textarea>
             </div>
 
             <br>
@@ -93,16 +93,16 @@
             <div v-if="newFourthStepHarm">
               <h1>Who did I harm?</h1><br>
               <label><strong>Who</strong></label><br>
-              <textarea class="text-input" type="text" placeholder="Which person, place, thing, or organazation did I harm?" v-model=" newFourthStepWho"></textarea>
+              <textarea class="text-input" type="text" placeholder="Which person, place, thing, or organization did I harm?" v-model=" newFourthStepWho"></textarea>
             </div>
 
 
             <br>
 
             <div v-if="newFourthStepFear">
-              <h1>What am I affraid of?</h1><br>
+              <h1>What am I afraid of?</h1><br>
               <label><strong>What</strong></label><br>
-              <textarea class="text-input" type="text" placeholder="Which person, place, thing, situation, or organazation am I affraid of?" v-model=" newFourthStepWhat"></textarea>
+              <textarea class="text-input" type="text" placeholder="Which person, place, thing, situation, or organization am I afraid of?" v-model=" newFourthStepWhat"></textarea>
             </div>
           </section>  
           
@@ -131,9 +131,9 @@
               <br>
 
               <div v-if="newFourthStepFear">
-                <h1>Why am I affraid of this?</h1><br>
+                <h1>Why am I afraid of this?</h1><br>
                 <label><strong>Why</strong></label><br>
-                <textarea placeholder="Detail out on all lavels, even the darkest scenario possible!:" v-model="newFourthStepWhy"> </textarea>
+                <textarea placeholder="Detail out on all levels, even the darkest scenario possible!:" v-model="newFourthStepWhy"> </textarea>
               </div>
               <br>
 
@@ -269,7 +269,7 @@
     
 
 
-        <!-- date compleated first three columns -->
+        <!-- date completed first three columns -->
 
 
 
@@ -303,7 +303,7 @@
 
           <div>
             <label>Where was I Frightened?</label><br>
-            <textarea placeholder="Dig deep where was I acting out of fear, what was I affraid will happen if I let go?:" v-model="newFourthStepFrightened"> </textarea>
+            <textarea placeholder="Dig deep where was I acting out of fear, what was I afraid will happen if I let go?:" v-model="newFourthStepFrightened"> </textarea>
           </div>
           <br>
         </div>
@@ -312,7 +312,7 @@
 
           <div>
 
-            <p>We reviewed our fears thoroughly. We put them on paper, even though we had no resentment in connection with them. We asked ourselves why we had them. Wasn’t it because self-reliance failed us? Selfreliance was good as far as it went, but it didn’t go far enough. Some of us once had great self-confidence, but it didn’t fully solve the fear problem, or any other. When it made us cocky, it was worse. Perhaps there is a better way—we think so. For we are now on a different basis; the basis of trusting and relying upon God. We trust infinite God rather than our finite selves. We are in the world to play the role He assigns. Just to the extent that we do as we think He would have us, and humbly rely on Him, does He enable us to match calamity with serenity. We never apologize to anyone for depending </p>
+            <p>We reviewed our fears thoroughly. We put them on paper, even though we had no resentment in connection with them. We asked ourselves why we had them. Wasn’t it because self-reliance failed us? Self reliance was good as far as it went, but it didn’t go far enough. Some of us once had great self-confidence, but it didn’t fully solve the fear problem, or any other. When it made us cocky, it was worse. Perhaps there is a better way—we think so. For we are now on a different basis; the basis of trusting and relying upon God. We trust infinite God rather than our finite selves. We are in the world to play the role He assigns. Just to the extent that we do as we think He would have us, and humbly rely on Him, does He enable us to match calamity with serenity. We never apologize to anyone for depending </p>
 
             BB p.68
           </div>
@@ -343,7 +343,7 @@
       </div>
 
 
-         <!-- date compleated fourth column -->
+         <!-- date completed fourth column -->
       <div id="fifth-column" v-if="newFourthStepFourthColumnDone">
         <div>
           <h2>A recommended Fifth column</h2>
@@ -373,7 +373,7 @@
         <br>
 
         <div>
-          <label>How can I now be setteled in the hands of my HP? <br> (opposite of fear) </label><br>
+          <label>How can I now be settled in the hands of my HP? <br> (opposite of fear) </label><br>
           <textarea placeholder="PUTS:" v-model="newFourthStepHpSerenity"> </textarea>
         </div>
         <br>
@@ -395,7 +395,7 @@
         
       </div>
 
-          <!-- date compleated fifth column -->
+          <!-- date completed fifth column -->
 
 
 
@@ -413,7 +413,7 @@
         </div>
         <br>
 
-          <!-- date compleated fifth step -->
+          <!-- date completed fifth step -->
 
 
 
@@ -427,7 +427,7 @@
         <br>
 
 
-          <!-- date compleated eigth step -->
+          <!-- date completed eight step -->
 
 
         
@@ -454,7 +454,7 @@
       </div>
 
 
-          <!-- date compleated ninth step -->
+          <!-- date completed ninth step -->
 
 
 
@@ -471,7 +471,7 @@
         <br>
 
         <div>
-          <h3>Was I set compleatly free<br>of this specific inventory<br>through this step work?</h3>
+          <h3>Was I set completely free<br>of this specific inventory<br>through this step work?</h3>
         </div>
       
 
@@ -501,7 +501,7 @@
       <div id="submit-fourth" v-if="newFourthStepTypeDone" style="line-height: 3em">
         
         <br>
-        <p>Anytime during writting this inventory you need a break and come back to it later, use this save button </p>
+        <p>Anytime during writing this inventory you need a break and come back to it later, use this save button </p>
         <button class="create-button" v-on:click="createFourthStep()"><p><strong>Click me! </strong><br> <small>To save this </small><br> <strong>"Fourth Step"</strong></p></button>
       </div>
     </form>

@@ -77,24 +77,24 @@
         <small> How can I now be "HP seeking"?</small><br>
         <p> {{ fourthStep.hp_seeking }} </p>
 
-        <small> How can I now be setteled in the hands of my HP?</small><br>
+        <small> How can I now be settled in the hands of my HP?</small><br>
         <p> {{ fourthStep.hp_serenity }} </p>
       </div>
 
 
         <div id="fifth-done-show">
-          <p v-if="fourthStep.fifth_done"> <strong> Great! </strong> <br> A <strong> "Fifth Step"</strong>  was succesfully done. <br> What am I doing next for my recovery? </p>
+          <p v-if="fourthStep.fifth_done"> <strong> Great! </strong> <br> A <strong> "Fifth Step"</strong>  was successfully done. <br> What am I doing next for my recovery? </p>
           <p v-if="!fourthStep.fifth_done"> When am I planing to complete a solid 5th step on this one? </p>
         </div>
 
 
         <div id="eight-done-show">
-          <p v-if="fourthStep.eight_done"> <strong> Great! </strong> <br> An <strong> "Eight Step"</strong>  was succesfully done. <br> What am I doing next for my recovery? </p>
+          <p v-if="fourthStep.eight_done"> <strong> Great! </strong> <br> An <strong> "Eight Step"</strong>  was successfully done. <br> What am I doing next for my recovery? </p>
           <p v-if="!fourthStep.eight_done"> When am I planing to complete a solid 8th step on this one? </p>
         </div>
 
         <div id="ninth-done-show">
-          <p v-if="fourthStep.ninth_done"> <strong> Great! </strong> <br> A <strong> "Ninth Step"</strong>  was succesfully done. </p>
+          <p v-if="fourthStep.ninth_done"> <strong> Great! </strong> <br> A <strong> "Ninth Step"</strong>  was successfully done. </p>
           <h4 v-if="fourthStep.ninth_done">After a complete 9th step, I may feel great!</h4>
           <p v-if="!fourthStep.ninth_done"> When am I planing to complete a solid 9th step on this one? </p>
         </div>
@@ -111,7 +111,7 @@
               I DO NOT WANT TO MISS OUT! 
             </h2>
             <p>
-              I have a promise that this work, if done right, will set me compleatly free! <br> At least free of this specific inventory item!!!
+              I have a promise that this work, if done right, will set me completely free! <br> At least free of this specific inventory item!!!
             </p>
           </div>
 
@@ -124,11 +124,11 @@
             </h1> 
 
             <h3>
-              I have recieved grace from my HP.
+              I have received grace from my HP.
             </h3>
 
             <h4>
-               "What a miraculous feeling of releif!"
+               "What a miraculous feeling of relief!"
             </h4> 
             <h3>
               Keep on trudging the road to a happy destiny

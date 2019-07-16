@@ -47,7 +47,7 @@
           <h1>All Fear inventories: </h1>
           <br>
           <br>       
-          <h3> What am I affraid of in this inventory:</h3> <h1>{{ fourthStep.what }}</h1>   
+          <h3> What am I afraid of in this inventory:</h3> <h1>{{ fourthStep.what }}</h1>   
         <router-link  v-bind:to="'/fourth_steps/' + fourthStep.id"><button>
           See this full fourth step info:</button>
         </router-link>

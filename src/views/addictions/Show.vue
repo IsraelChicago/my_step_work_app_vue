@@ -8,8 +8,8 @@
       <img v-bind:src="addiction.switch_background_url" alt="">
       <p>The Problem: {{ addiction.problem }}</p>
       <p>The Solution: {{ addiction.solution }}</p>
-      <p>The Promises: {{ addiction.problem }}</p>
-      <p>The Twelve Steps: {{ addiction.solution }}</p>
+      <p>The Promises: {{ addiction.promises }}</p>
+      <p>The Twelve Steps: {{ addiction.twelve_steps }}</p>
       <p>Recovery group official website: {{ addiction.recovery_url }}</p>
 
       <router-link v-bind:to="'/addictions/'">
