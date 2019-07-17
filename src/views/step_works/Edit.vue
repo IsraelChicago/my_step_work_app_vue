@@ -81,7 +81,7 @@ export default {
       if(confirm("Do you really want to delete the intire work of step " + this.stepWork.step + "?"))
       axios.delete("/api/step_works/" + this.stepWork.id).then(response => {
         console.log("Success!", response.data);
-        this.$router.push("/step_works/index");
+        this.$router.push("/step_works");
       });
     }
   }

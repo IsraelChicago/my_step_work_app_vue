@@ -17,6 +17,12 @@ import FourthStepShow from "./views/fourth_steps/Show.vue";
 import FourthStepEdit from "./views/fourth_steps/Edit.vue";
 import FourthStepIndex from "./views/fourth_steps/Index.vue";
 
+// import TenthStepNew from "./views/tenth_step/New.vue";
+// import TenthStepShow from "./views/tenth_step/Show.vue";
+// import TenthStepEdit from "./views/tenth_step/Edit.vue";
+// import TenthStepIndex from "./views/tenth_step/Index.vue";
+
+
 import StepWorkNew from "./views/step_works/New.vue";
 import StepWorkShow from "./views/step_works/Show.vue";
 import StepWorkEdit from "./views/step_works/Edit.vue";
@@ -98,6 +104,28 @@ export default new Router({
       name: 'fourth-steps-edit',
       component: FourthStepEdit
     },
+
+
+    // {
+    //   path: '/tenth_step',
+    //   name: 'tenth-step-index',
+    //   component: TenthStepIndex
+    // },
+    // {
+    //   path: '/tenth_step/new',
+    //   name: 'tenth-step-new',
+    //   component: TenthStepNew
+    // },
+    // {
+    //   path: '/tenth_step/:id',
+    //   name: 'tenth-step-show',
+    //   component: TenthStepShow
+    // },
+    // {
+    //   path: '/tenth_step/:id/edit',
+    //   name: 'tenth-step-edit',
+    //   component: TenthStepEdit
+    // },
 
 
     {

@@ -1,0 +1,599 @@
+/* Extra small devices - xs (portrait phones, less than 576px) */
+@media (max-width: 575px) { 
+
+/* Heading Styles Starts */
+
+	.page-heading {
+		margin-top: 50px;
+		margin-bottom: 10px;
+	}
+	.heading-1.text-center-xs::after {
+		margin-left: auto;
+		margin-right: auto;
+	}	
+
+/* Main Header Styles Starts */
+
+	.main-header {
+		padding-top: 20px;
+	}	
+
+/* Top Bar Styles Starts */
+
+	.topbar ul {
+		margin-top: 10px;
+	}
+		.topbar li + li {
+			margin-left: 0;
+		}	
+
+/* Navbar Styles Starts */
+
+	#nav .navbar-toggler {
+		padding-right: 0;
+		border: none;
+		outline: none;
+	}
+		#nav .navbar-toggler .navbar-toggler-icon {
+			padding-top: 5px;			
+		}
+			#nav .navbar-nav > li > a {
+				padding-top: 8px;
+				padding-bottom: 8px;
+			}
+	#nav .collapse {
+		margin-top: 6px;
+		padding-top: 6px;
+		border-top: 1px solid #fff;
+	}
+
+/* Home Intro Info Box Styles Starts */
+
+	.home-intro-info-box-wrap {
+		margin-top: -30px;
+	}
+		.home-intro-info-box .btn {
+			margin-top: 15px;
+			padding: 10px 30px;
+			font-size: 16px;
+		}	
+	
+/* Home Plan Info Section Styles Starts */
+
+	.home-plan-info-tabs > li {
+		float: none;
+	}
+	.home-plan-info-tabs > li + li {
+		margin-left: 0;
+	}
+		.home-plan-info-tabs > li > a {
+			padding: 12px 24px;
+		}		
+			.home-plan-info-tabs > li > a > h4 {
+				font-size: 18px;
+			}
+			.home-plan-info-tabs > li > a > h6 {
+				font-size: 15px;
+			}
+		.home-plan-info-tabs-wrap .tab-content {
+			padding-top: 30px;
+		}		
+
+/* Home News Section Styles Starts */
+
+	#home-news-carousel .owl-controls .owl-buttons div {
+		top: -550px;
+	}	
+		#home-news-carousel .owl-controls .owl-buttons .owl-prev {
+			left: 0;
+			right: auto;
+		}
+
+/* About Who We Are Section Styles Starts */
+
+	.about-who-we-are-box {
+		padding-top: 20px;
+		padding-bottom: 0;
+	}	
+
+/* Services Section #1 Starts */
+
+	.services-section-1-box .fa {
+		margin-bottom: 15px;
+	}
+
+/* Services Special Section Styles Starts */
+
+	.services-spl-box {
+		margin-top: 20px;
+	}
+		.services-spl-box .fa {
+			margin: 0 0 20px;
+		}
+
+/* Tab Styles Starts */
+
+	.tabs-1 > li {
+		float: none;
+	}
+		.tabs-1 > li > a {
+			margin-right: 0;
+			padding-left: 0;
+		}
+		.tabs-1-wrap .tab-content h5 {
+			margin-bottom: 30px;
+		}	
+
+/* Pricing Table Styles Starts */
+
+	.pricing-table {
+		margin-top: 0;
+	}
+		.pricing-table .plan-list li {
+			padding: 15px;
+			font-size: 16px;
+		}
+
+/* List Styles Starts */
+
+	.list-style-1 li .img-fluid {
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+
+/* Footer Top Styles Starts */
+
+	.footer-top > .container > .row > .col-sm-12 + .col-sm-12 {
+		margin-top: 30px;
+	}
+		.foot-heading::after {
+			margin-left: auto;
+			margin-right: auto;
+		}
+			.footer-top .address-list li .fa, 
+			.footer-top .tweets-list li .fa {
+				display: none;
+			}
+
+/* Copyright Styles Starts */	
+
+	.copyright ul {
+		margin-top: 10px;
+	}	
+
+/* Generic Styles Starts */
+
+	.d-xs-block {
+		display: block !important;
+	}
+	.d-xs-none {
+		display: none;
+	}
+	.img-center-xs {
+		margin-left: auto;
+		margin-right: auto;
+	}	
+
+	.text-xs-left   { text-align: left;   }
+	.text-xs-center { text-align: center; }
+	.text-xs-right  { text-align: right;  }			
+
+}
+
+/* Small devices - sm (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) { 
+
+/* Heading Styles Starts */
+
+	.page-heading {
+		margin-top: 50px;
+		margin-bottom: 10px;
+	}
+	.heading-1.text-center-sm::after {
+		margin-left: auto;
+		margin-right: auto;
+	}	
+
+/* Main Header Styles Starts */
+
+	.main-header {
+		padding-top: 20px;
+	}	
+
+/* Top Bar Styles Starts */
+
+	.topbar ul {
+		margin-top: 10px;
+	}
+		.topbar li + li {
+			margin-left: 0;
+		}	
+
+/* Navbar Styles Starts */
+
+	#nav .navbar-toggler {
+		padding-right: 0;
+		border: none;
+		outline: none;
+	}
+		#nav .navbar-toggler .navbar-toggler-icon {
+			padding-top: 5px;			
+		}
+			#nav .navbar-nav > li > a {
+				padding-top: 8px;
+				padding-bottom: 8px;
+			}
+	#nav .collapse {
+		margin-top: 6px;
+		padding-top: 6px;
+		border-top: 1px solid #fff;
+	}
+
+/* Home Intro Info Box Styles Starts */
+
+	.home-intro-info-box-wrap {
+		margin-top: -30px;
+	}
+		.home-intro-info-box .btn {
+			margin-top: 15px;
+			padding: 10px 30px;
+			font-size: 16px;
+		}	
+	
+/* Home Plan Info Section Styles Starts */
+
+	.home-plan-info-tabs > li {
+		float: none;
+	}
+	.home-plan-info-tabs > li + li {
+		margin-left: 0;
+	}
+		.home-plan-info-tabs > li > a {
+			padding: 12px 24px;
+		}		
+			.home-plan-info-tabs > li > a > h4 {
+				font-size: 18px;
+			}
+			.home-plan-info-tabs > li > a > h6 {
+				font-size: 15px;
+			}
+		.home-plan-info-tabs-wrap .tab-content {
+			padding-top: 30px;
+		}		
+
+/* Home News Section Styles Starts */
+
+	#home-news-carousel .owl-controls .owl-buttons div {
+		top: -550px;
+	}	
+		#home-news-carousel .owl-controls .owl-buttons .owl-prev {
+			left: 0;
+			right: auto;
+		}
+
+/* About Who We Are Section Styles Starts */
+
+	.about-who-we-are-box {
+		padding-top: 20px;
+		padding-bottom: 0;
+	}	
+
+/* Services Section #1 Starts */
+
+	.services-section-1-box .fa {
+		margin-bottom: 15px;
+	}
+
+/* Services Special Section Styles Starts */
+
+	.services-spl-box {
+		margin-top: 20px;
+	}
+		.services-spl-box .fa {
+			margin: 0 0 20px;
+		}
+
+/* Tab Styles Starts */
+
+	.tabs-1 > li {
+		float: none;
+	}
+		.tabs-1 > li > a {
+			margin-right: 0;
+			padding-left: 0;
+		}
+		.tabs-1-wrap .tab-content h5 {
+			margin-bottom: 30px;
+		}	
+
+/* Pricing Table Styles Starts */
+
+	.pricing-table {
+		margin-top: 0;
+	}
+		.pricing-table .plan-list li {
+			padding: 15px;
+			font-size: 16px;
+		}
+
+/* List Styles Starts */
+
+	.list-style-1 li .img-fluid {
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+
+/* Footer Top Styles Starts */
+
+	.footer-top > .container > .row > .col-sm-12 + .col-sm-12 {
+		margin-top: 30px;
+	}
+		.foot-heading::after {
+			margin-left: auto;
+			margin-right: auto;
+		}
+			.footer-top .address-list li .fa, 
+			.footer-top .tweets-list li .fa {
+				display: none;
+			}
+
+/* Copyright Styles Starts */	
+
+	.copyright ul {
+		margin-top: 10px;
+	}	
+
+/* Generic Styles Starts */
+
+	.img-center-sm {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+}
+
+/* Medium devices - md (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) { 
+
+/* Heading Styles Starts */
+
+	.page-heading {
+		margin-top: 70px;
+		margin-bottom: 20px;
+	}
+	.heading-1.text-center-md::after {
+		margin-left: auto;
+		margin-right: auto;
+	}	
+
+/* Main Header Styles Starts */
+
+	.main-header {
+		padding-top: 20px;
+	}
+
+/* Top Bar Styles Starts */
+
+	.topbar ul {
+		margin-top: 10px;
+	}
+		.topbar li + li {
+			margin-left: 0;
+		}
+
+/* Navigation Styles Starts */
+
+	#nav .navbar-toggler {
+		padding-right: 0;
+		border: none;
+		outline: none;
+	}
+		#nav .navbar-toggler .navbar-toggler-icon {
+			padding-top: 5px;			
+		}
+			#nav .navbar-nav > li > a {
+				padding-top: 8px;
+				padding-bottom: 8px;
+			}
+	#nav .collapse {
+		margin-top: 6px;
+		padding-top: 6px;
+		border-top: 1px solid #fff;
+	}	
+		
+/* Main Slider Styles Starts */
+
+	#main-slider .carousel-caption .container {
+		padding: 100px 40px 20px;
+	}
+		#main-slider .carousel-caption h1 {
+			font-size: 34px;
+		}
+		#main-slider .carousel-caption h5 {
+			margin-top: 10px;
+			margin-bottom: 15px;
+		}
+		#main-slider .carousel-caption ul {
+			margin-top: 20px;
+		}	
+			#main-slider .carousel-caption ul > li > a.btn {
+				padding: 10px 24px;
+				font-size: 16px;
+			}	
+
+/* Home Intro Info Box Styles Starts */
+
+	.home-intro-info-box-wrap {
+		margin-top: -30px;
+	}
+		.home-intro-info-box .btn {
+			margin-top: 15px;
+			padding: 10px 30px;
+			font-size: 16px;
+		}
+
+/* Home Plan Info Section Styles Starts */
+
+	.home-plan-info-tabs > li + li {
+		margin-left: 22px;
+	}
+		.home-plan-info-tabs > li > a {
+			padding: 12px 24px;
+		}		
+			.home-plan-info-tabs > li > a > h4 {
+				font-size: 18px;
+			}
+			.home-plan-info-tabs > li > a > h6 {
+				font-size: 15px;
+			}
+		.home-plan-info-tabs-wrap .tab-content {
+			padding-top: 40px;
+		}
+
+/* Home News Section Styles Starts */
+
+	.home-news-box-meta li {
+		padding: 5px 10px;
+		font-size: 12px;
+	}
+	#home-news-carousel .owl-controls .owl-buttons div {
+		top: -560px;
+	}
+
+/* Pricing Table Styles Starts */
+
+	.pricing-table .plan-name h3 {
+		font-size: 24px;
+	}
+	.pricing-table .plan-name h6 {
+		font-size: 15px;
+	}
+	.pricing-table .plan-price h3 {
+		font-size: 26px;
+	}
+	.pricing-table .plan-list li {
+		padding: 15px;
+		font-size: 15px;
+	}
+
+/* Footer Styles Starts */	
+
+	.footer-top .newsletter-block {
+		margin-top: 30px;
+	}		
+	
+/* Generic Styles Starts */
+
+	.img-center-md {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+}
+
+/* Large devices - lg (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) { 
+
+/* Heading Styles Starts */
+
+	.heading-1.text-center-lg::after {
+		margin-left: auto;
+		margin-right: auto;
+	}	
+
+/* Navigation Styles Starts */
+
+	#nav .navbar-nav > li > a {
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+		#nav .dropdown:hover .dropdown-menu {
+			display: block;
+		}	
+
+/* Main Slider Styles Starts */
+
+	#main-slider .carousel-caption .container {
+		padding: 130px 60px 20px;
+	}
+		#main-slider .carousel-caption h1 {
+			font-size: 38px;
+		}
+		#main-slider .carousel-caption h5 {
+			margin-top: 10px;
+			margin-bottom: 15px;
+		}
+		#main-slider .carousel-caption ul {
+			margin-top: 20px;
+		}
+
+/* Home Plan Info Section Styles Starts */
+
+	.home-plan-info-tabs > li + li {
+		margin-left: 20px;
+	}
+		.home-plan-info-tabs > li > a {
+			padding: 16px 32px;
+		}
+
+/* Home Gallery Section Starts */
+
+	.home-gallery-item .hover-content .overlay a.zoom .fa {
+		margin-top: 70px;
+	}
+
+/* Home News Section Styles Starts */
+
+	.home-news-box-meta li {
+		padding: 5px 10px;
+		font-size: 12px;
+	}
+	#home-news-carousel .owl-controls .owl-buttons div {
+		top: -600px;
+	}
+
+/* Services Section #1 Starts */
+
+	.services-section-1-box h4 {
+		font-size: 22px;
+	}
+	.services-section-1-box .fa {
+		margin-right: 20px;
+		margin-bottom: 70px;
+		font-size: 38px;
+	}
+
+/* Tab Styles Starts */
+
+	.tabs-1 > li > a {
+		padding-left: 8px;
+		padding-right: 8px;
+		font-size: 15px;
+	}	
+
+/* Generic Styles Starts */
+
+	.img-center-lg {
+		margin-left: auto;
+		margin-right: auto;
+	}	
+
+}
+
+/* Extra large devices - xl (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+/* Heading Styles Starts */
+
+	.heading-1.text-center-xl::after {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+/* Navigation Styles Starts */
+
+	#nav .dropdown:hover .dropdown-menu {
+		display: block;
+	}	
+
+}

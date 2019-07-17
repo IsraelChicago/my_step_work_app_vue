@@ -48,7 +48,7 @@
       <div>
         <h4 v-if="user.tenth_count > 1">I have {{ user.tenth_count }} 10th steps saved </h4>
         <h4 v-if="user.tenth_count === 1">I have {{ user.tenth_count }} 10th step saved </h4>
-        <h4 v-else="user.tenth_count < 1">I have NO 10th step saved yet.</h4>
+        <h4 v-if="user.tenth_count < 1">I have NO 10th step saved yet.</h4>
       </div>
        
 
