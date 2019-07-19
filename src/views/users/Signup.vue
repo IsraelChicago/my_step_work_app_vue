@@ -1,5 +1,12 @@
 <template>
   <div class="signup">
+    <br><br><br>
+
+    <div class="home-intro-info-box-wrap">
+        <!-- Nested Container Starts -->
+          <div class="container text-xs-center text-sm-center text-md-left" >
+          <!-- Home Intro Info Box Starts -->
+            <div class="home-intro-info-box">
 
     
       <section class="section-area info-section blue text-center">
@@ -98,9 +105,12 @@
     <!-- Nested Container Ends -->
     </section>
 <br>
+
+</div></div></div>
     <section class="section-area lite appointment-section">
       
-      
+      <br>
+      <br>
       
         
       <h4 class="text-spl-color text-center text-weight-normal">

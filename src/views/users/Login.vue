@@ -2,8 +2,13 @@
 
 <template>
   <div class="login">
-
-    
+<br><br>
+   <div class="home-intro-info-box-wrap">
+        <!-- Nested Container Starts -->
+          <div class="container text-xs-center text-sm-center text-md-left" >
+          <!-- Home Intro Info Box Starts -->
+            <div class="home-intro-info-box">
+ 
         
         
       
@@ -52,7 +57,7 @@
           
           
             <div class="col-12 text-center">
-              <input type="submit" class="btn btn-main animation" value="Create Account">
+              <input type="submit" class="btn btn-main animation" value="Login">
             </div>
 
             <br>
@@ -68,6 +73,7 @@
       </div>
     <!-- Nested Container Ends -->
     </section>
+  </div></div></div>
 <br>
     <section class="section-area lite appointment-section">
       
@@ -78,9 +84,9 @@
         <br>
       </h4>
       
-      <router-link v-bind:to="'/login'">
+      <router-link v-bind:to="'/signup'">
       <div class="col-12 text-center">
-        <input type="submit" class="btn btn-main animation" value="Login">
+        <input type="submit" class="btn btn-main animation" value="Signup">
       </div>
       </router-link>
     </section>
@@ -107,7 +113,7 @@
     </div>
     <br>
         <br>
-        <input type="submit" class="button-input" value="Submit">
+        <input type="submit" class="btn btn-main flat animation" value="Submit">
         <br>
         <br>
         

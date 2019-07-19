@@ -1,5 +1,11 @@
 <template>
   <div class="users-edit">
+
+    <div class="home-intro-info-box-wrap">
+        <!-- Nested Container Starts -->
+          <div class="container text-xs-center text-sm-center text-md-left" >
+          <!-- Home Intro Info Box Starts -->
+            <div class="home-intro-info-box">
     <div>
       <form v-on:submit.prevent="submit()">
         <h1>Edit Profile</h1>
@@ -33,7 +39,7 @@
         <input type="submit" class="btn btn-primary" value="Submit">
       </form>
     </div>
-  </div>
+  </div></div></div></div>
 </template>
 
 <script>
