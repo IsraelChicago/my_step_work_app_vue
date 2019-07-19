@@ -43,7 +43,7 @@
       <h1 style="padding: 45px 75px"><strong>{{ message }}</strong></h1>
          <br>
     </div>
-<div style="height: 2000px;background-color: lightblue"><br><br><br>
+<div style="height: 2400px;background-color: lightblue"><br><br><br>
 
 <div  style="background-color: darkred; margin: auto;  height: 90% ;padding: 35px;font-size: 20px; width: 93%; ">
   <br><br><br>
@@ -60,12 +60,17 @@
                     "><strong><em style="font-size: 85px;">"WALLOW IN PAIN"</em></strong> </h1><br>
                     <h1 style="color: darkred; margin-left: 23%
                     "><strong>and PROCRASTINATE showing up for recovery?</strong></h1> <br>
-                    <h1 style="color: darkblue; line-height: 1.4em;
+<br>                    <h1 style="color: darkblue; line-height: 1.4em;
                     ">
-                    <br> <strong> Obviously shame is ego based <br>Unfortunately ADDICTIVE TRAITS without recovery, has the power to kill, if I allow it to. <br>I see in this App clearly how many recovery groups are out there! <br>Millions are getting the promises of Recovery. <br></strong></h1> 
+                    <br> <strong> Obviously shame is ego based <br>Unfortunately ADDICTIVE TRAITS without recovery, has the power to kill, if I allow it to. <br><br><br>I see in this App clearly how many recovery groups are out there! <br>Millions are getting the promises of Recovery. <br></strong></h1> 
 <br>
                     <h1 style="color: darkblue; font-size: 75px; text-align: left"><strong> I am now choosing  to be:
-                    </strong></h1> <h1 style="color: darkblue; font-size: 75px; text-align: left">ONE OF THEM! </strong> </h1></div><br><br>
+                    </strong></h1> 
+
+
+                    <h1 style="color: darkblue;"><strong style="font-size: 150px; padding: 25%;"><em>ONE OF THEM! </em></strong></h1>
+                  </div>
+                  <br><br>
 </div><br>
   </div>
 <br>  </div>
