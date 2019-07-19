@@ -138,9 +138,63 @@
               
             <!-- Title Ends -->
               
-                    
-                <router-link style="color: white; height: 45px " class="btn btn-block btn-main flat animation" to="/home">
-                 Back to home page</router-link> 
+                     <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item "><router-link style="color: white; border-radius: 10px; height: 45px " class="btn btn-block btn-main flat animation" to="/">
+                 Back to home page</router-link> </li>
+                
+                   
+                 <li class="nav-item "><router-link style="color: white; border-radius: 10px; height: 45px " class="btn btn-block btn-main flat animation" to="/addictions/">
+                     Addiction
+                     </router-link>
+                   </li>
+
+
+                   <li class="nav-item "><router-link style="color: white; border-radius: 10px; height: 45px " class="btn btn-block btn-main flat animation"  to="/fourth_steps/">
+                     Fourth Steps
+                     </router-link>
+                   </li>
+
+                   <li class="nav-item "><router-link style="color: white; border-radius: 10px; height: 45px " class="btn btn-block btn-main flat animation"  to="/step_works/">
+                     Step Work
+                     </router-link>
+                   </li>
+
+                   <li class="nav-item "><router-link style="color: white; border-radius: 10px; height: 45px " class="btn btn-block btn-main flat animation"  to="/users/show">
+                     Profile
+                     </router-link>
+                   </li>
+<br><br>
+
+                   <li  v-if="isLoggedIn()">
+                     <router-link  to="/logout"><button style="background-color: darkred; width: 150px " class="btn btn-block btn-main flat animation"  >Logout</button>
+                     </router-link>
+                   </li>
+
+
+                   <li class="nav-item " v-if="!isLoggedIn()">
+                     <router-link class="nav-link" to="/login">Login
+                     </router-link>
+                   </li>
+
+                   
+                   <li  v-if="!isLoggedIn()">
+                     <router-link  to="/signup"><button class=" nav-item active nav-link" >Sign Up</button>
+                     </router-link>
+                   </li>
+
+                               
+                   <!-- <li class="nav-item dropdown">
+                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                       Blog
+                     </a>
+                     <ul class="dropdown-menu flat" role="menu">
+                       <a class="dropdown-item" href="blog.html">Blog</a>
+                       <a class="dropdown-item" href="blog-single.html">Blog Single Post</a>
+                     </ul>
+                   </li> -->
+
+                   
+                 </ul>
               </form>
             </div>
           <!-- Newsletter Col Ends -->

@@ -50,10 +50,27 @@ How much longer will I wallow in pain and procrastinate showing up for my recove
                   <h6 style="background-color: lightblue; color: lightblue">.</h6>
                   
                 <h6 style="color: darkgrey" >Addictive Behaivior</h6>
-                  <h5 style="color: red" class="text-weight-bold ">{{ addiction.addiction_family }}</h5>
+                  
+                  <h5 v-if="addiction.affected_from_addicts" style="color: red" class="text-weight-bold ">Affected From Addicts</h5>
+
+                  <h5 v-if="addiction.food" style="color: red" class="text-weight-bold "> Food </h5>
+
+                  <h5 v-if="addiction.financials" style="color: red" class="text-weight-bold ">Financials </h5>
+
+                  <h5 v-if="addiction.sex" style="color: red" class="text-weight-bold ">Sex </h5>
+
+                  <h5 v-if="addiction.drug_of_choice" style="color: red" class="text-weight-bold "> Drug og Choice</h5>
+
+                  <h5 v-if="addiction.gaming_and_internet" style="color: red" class="text-weight-bold ">Gaming amd Internet</h5>
+
+                  <h5 v-if="addiction.self_growth" style="color: red" class="text-weight-bold ">Self Growth</h5>
+
+                  <h5 v-if="addiction.all_types_welcome "style="color: red" class="text-weight-bold ">All Types Welcome</h5>
+
+                  <h5 v-if="addiction.alcohol " style="color: red" class="text-weight-bold ">Alcohol</h5>
+
                   <h6 style="background-color: lightblue; color: lightblue">.</h6>
               
-                  
                   <div class="gallery-item-1-caption">
                     <h3 class="text-brand-color text-uppercase text-weight-bold" style="color: black">{{ addiction.title }} </h3>
                     <br>
@@ -88,12 +105,13 @@ How much longer will I wallow in pain and procrastinate showing up for my recove
             </ul>
           <!-- Gallery Ends -->
               </div>
-          Main Container Ends 
+        
 
 
 
-
-
+                
+              <!-- Content Ends -->
+              
 
 
 

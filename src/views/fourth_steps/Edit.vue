@@ -1,5 +1,12 @@
 <template> 
   <div class="fourth-steps-edit">
+
+     <div class="home-intro-info-box-wrap">
+        <!-- Nested Container Starts -->
+          <div class="container text-xs-center text-sm-center text-md-left" >
+          <!-- Home Intro Info Box Starts -->
+            <div class="home-intro-info-box">
+              
  
     <form v-on:submit.prevent="submit()">
 
@@ -496,7 +503,7 @@
               
               <br>
               <p>Anytime during writing this inventory you need a break and come back to it later, use this save button </p>
-              <button type="submit" class="create-button"><p><strong>Click me! </strong><br> <small>To update and save this </small><br> <strong>"Fourth Step"</strong></p></button>
+              <button type="submit" class="btn btn-main flat animation"><p style="background-color: grey"><strong>Click me! </strong><br> <small>To update and save this </small><br> <strong>"Fourth Step"</strong></p></button>
             </div>
     </form>
 
@@ -512,6 +519,7 @@
       </div>   
 
   </div>
+</div></div></div>
 </template>
 
 <script>

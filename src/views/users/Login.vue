@@ -57,7 +57,7 @@
           
           
             <div class="col-12 text-center">
-              <input type="submit" class="btn btn-main animation" value="Login">
+              <input style="border: 2px; border-color: " type="submit" class="btn btn-main animation" value="Login">
             </div>
 
             <br>
